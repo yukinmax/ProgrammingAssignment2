@@ -30,7 +30,7 @@ cacheSolve <- function(x, ...) {
     }
     message("inverting matrix")
     m <- x$get()
-    im <- solve(m)
+    im <- solve(m, ...)
     x$setinversed(im)
     im
 }
